@@ -5,11 +5,12 @@
 }
 
 .tscplayer_inline {
-	position:static;
-	margin: 30px;
-	width: $EmbedWidth$#px;
-	height: $EmbedHeight$#px;
-	z-index:auto;
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+	z-index: 9999;	
 }
 
 .tscplayer_fullframe {
@@ -21,8 +22,8 @@
 	z-index: 9999;	
 }
 
-@media screen and (max-width: $EmbedWidth$px) {
-    .tscplayer_inline {
-	width: 100%;
-    }
+@media screen and (max-width: 500px) {
+	.tscplayer_inline {
+		width: 100%;
+	}
 }
